@@ -48,7 +48,16 @@ export const projectsData = [
     tech: ['Python', 'matplotlib', 'Dash', 'Pandas','Numpy','seaborn','Power BI'],
     repo: 'https://github.com/davidqm7/BusinessSalesDashboard'
   },
-
+  {
+    id: 'O-list',
+    title: 'E-Commerce Customer Segmentation Project: Olist Revenue Analysis ',
+    category: 'ml',
+    icon: <FaProjectDiagram />,
+    description:
+      'Utilized SQL Joins and Python to build an RFM model on 100k+ orders, identifying $2.5M in at-risk revenue and visualizing key segments with Seaborn',
+    tech: ['Python','SQL joins', 'Pandas','seaborn'],
+    repo: 'https://github.com/davidqm7/olist-customer-segmentation'
+  },
   // Backend
   {
     id: 'p1',
