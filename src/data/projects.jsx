@@ -25,7 +25,7 @@ export const projectsData = [
     icon: <FaProjectDiagram />,
     description:
       'Developed VaporScope, an AI-driven tool that analyzes Steam game reviews using NLP techniques like sentiment analysis and topic modeling. Built with Python, Pandas, NLTK, and Scikit-learn, it provides gamers with insights into game quality and user sentiment.',
-    tech: ['Gemini API', 'Cloudflare Workers', 'Pandas', 'Supabase', 'SQL'],
+    tech: ['Gemini API', 'Cloudflare Workers', 'Supabase', 'SQL'],
     repo: 'https://github.com/davidqm7/VaporScope',
     demo: 'https://chromewebstore.google.com/detail/vaporscope-steam-review-a/jjijnfboadbbebbbljkohheepooleinb?pli=1'
   },
