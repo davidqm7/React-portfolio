@@ -5,7 +5,18 @@ import {
   FaReact,
   FaHtml5,
   FaCss3Alt,
-  FaGithub,
+  FaChartBar,
+  FaBrain,
+  FaSmile,
+  FaRobot,
+  FaLightbulb,
+  FaUsers,
+  FaSearch,
+  FaBalanceScale,
+  FaFlask,
+  FaChartLine,
+  FaBroom,
+  FaTable,
 } from 'react-icons/fa';
 import {
   SiPandas,
@@ -22,6 +33,9 @@ import {
   SiTrello,
   SiJest,
   SiScikitlearn,
+  SiCloudflare,
+  SiSupabase,
+  SiSnowflake,
 } from 'react-icons/si';
 
 // Filters shown as buttons in the Skills section
@@ -47,16 +61,18 @@ export const skillsData = [
   // Data Analysis & Visualization
   { id: 'data1', name: 'Pandas', icon: <SiPandas />, category: 'data', level: 85, proficiency: 'Advanced' },
   { id: 'data2', name: 'NumPy', icon: <SiNumpy />, category: 'data', level: 80, proficiency: 'Advanced' },
-  { id: 'data3', name: 'Matplotlib', icon: <SiGoogleanalytics />, category: 'data', level: 75, proficiency: 'Advanced' },
+  { id: 'data3', name: 'Matplotlib', icon: <FaChartBar />, category: 'data', level: 75, proficiency: 'Advanced' },
   { id: 'data4', name: 'Plotly', icon: <SiPlotly />, category: 'data', level: 75, proficiency: 'Advanced' },
   { id: 'data5', name: 'Dash', icon: <SiPlotly />, category: 'data', level: 70, proficiency: 'Intermediate' },
   { id: 'data6', name: 'Tableau', icon: <SiTableau />, category: 'data', level: 75, proficiency: 'Advanced' },
-  { id: 'data7', name: 'Excel / Google Sheets', icon: <SiGoogleanalytics />, category: 'data', level: 85, proficiency: 'Advanced' },
-  { id: 'data8', name: 'Hypothesis Testing / A/B Testing', icon: <SiGoogleanalytics />, category: 'data', level: 70, proficiency: 'Intermediate' },
-  { id: 'data9', name: 'Linear Regression', icon: <SiGoogleanalytics />, category: 'data', level: 70, proficiency: 'Intermediate' },
-  { id: 'data10', name: 'Data Cleaning', icon: <SiGoogleanalytics />, category: 'data', level: 80, proficiency: 'Advanced' },
+  { id: 'data7', name: 'Excel / Google Sheets', icon: <FaTable />, category: 'data', level: 85, proficiency: 'Advanced' },
+  { id: 'data8', name: 'Hypothesis Testing / A/B Testing', icon: <FaFlask />, category: 'data', level: 70, proficiency: 'Intermediate' },
+  { id: 'data9', name: 'Linear Regression', icon: <FaChartLine />, category: 'data', level: 70, proficiency: 'Intermediate' },
+  { id: 'data10', name: 'Data Cleaning', icon: <FaBroom />, category: 'data', level: 80, proficiency: 'Advanced' },
   { id: 'data11', name: 'Scikit-Learn', icon: <SiScikitlearn />, category: 'data', level: 65, proficiency: 'Intermediate' },
-
+  { id: 'data12', name: 'Seaborn', icon: <FaChartBar />, category: 'data', level: 75, proficiency: 'Advanced' },
+  { id: 'data13', name: 'Natural Language Processing', icon: <FaBrain />, category: 'data', level: 65, proficiency: 'Intermediate' },
+  { id: 'data14', name: 'Sentiment Analysis', icon: <FaSmile />, category: 'data', level: 65, proficiency: 'Intermediate' },
 
   // Frontend
   { id: 'fe1', name: 'React', icon: <FaReact />, category: 'frontend', level: 70, proficiency: 'Intermediate' },
@@ -72,16 +88,20 @@ export const skillsData = [
   { id: 'db1', name: 'PostgreSQL', icon: <SiPostgresql />, category: 'databases', level: 70, proficiency: 'Intermediate' },
   { id: 'db2', name: 'SQL (General)', icon: <SiMysql />, category: 'databases', level: 85, proficiency: 'Advanced' },
   { id: 'db3', name: 'Firebase Firestore', icon: <SiFirebase />, category: 'databases', level: 70, proficiency: 'Intermediate' },
+  { id: 'db4', name: 'Supabase', icon: <SiSupabase />, category: 'databases', level: 65, proficiency: 'Intermediate' },
+  { id: 'db5', name: 'Snowflake', icon: <SiSnowflake />, category: 'databases', level: 60, proficiency: 'Intermediate' },
 
   // Tools
   { id: 'tool1', name: 'Jupyter', icon: <SiJupyter />, category: 'tools', level: 85, proficiency: 'Advanced' },
   { id: 'tool2', name: 'Git / GitHub', icon: <SiGit />, category: 'tools', level: 85, proficiency: 'Advanced' },
   { id: 'tool3', name: 'Trello', icon: <SiTrello />, category: 'tools', level: 80, proficiency: 'Advanced' },
+  { id: 'tool4', name: 'Google Gemini API', icon: <FaRobot />, category: 'tools', level: 70, proficiency: 'Intermediate' },
+  { id: 'tool5', name: 'Cloudflare Workers', icon: <SiCloudflare />, category: 'tools', level: 65, proficiency: 'Intermediate' },
 
   // Soft Skills
-  { id: 'soft1', name: 'Problem Solving', icon: <FaGithub />, category: 'soft', level: 90, proficiency: 'Strong' },
-  { id: 'soft2', name: 'Analytical Thinking', icon: <FaGithub />, category: 'soft', level: 90, proficiency: 'Strong' },
-  { id: 'soft3', name: 'Teamwork & Communication', icon: <FaGithub />, category: 'soft', level: 85, proficiency: 'Strong' },
-  { id: 'soft4', name: 'Critical Thinking', icon: <FaGithub />, category: 'soft', level: 85, proficiency: 'Strong' },
-  { id: 'soft5', name: 'Storytelling with Data', icon: <FaGithub />, category: 'soft', level: 75, proficiency: 'Advanced' },
+  { id: 'soft1', name: 'Problem Solving', icon: <FaLightbulb />, category: 'soft', level: 90, proficiency: 'Strong' },
+  { id: 'soft2', name: 'Analytical Thinking', icon: <FaBrain />, category: 'soft', level: 90, proficiency: 'Strong' },
+  { id: 'soft3', name: 'Teamwork & Communication', icon: <FaUsers />, category: 'soft', level: 85, proficiency: 'Strong' },
+  { id: 'soft4', name: 'Critical Thinking', icon: <FaBalanceScale />, category: 'soft', level: 85, proficiency: 'Strong' },
+  { id: 'soft5', name: 'Storytelling with Data', icon: <FaChartBar />, category: 'soft', level: 75, proficiency: 'Advanced' },
 ];

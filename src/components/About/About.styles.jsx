@@ -43,6 +43,27 @@ export const AboutText = styled.div`
   }
 `;
 
+export const ResumeBtn = styled.a`
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 10px 22px;
+  background: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.white};
+  border-radius: ${({ theme }) => theme.radius.pill};
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: ${({ theme }) => theme.shadow.sm};
+  transition: background 0.2s, transform 0.15s;
+
+  &:hover {
+    background: ${({ theme }) => theme.colors.primaryDark};
+    transform: translateY(-2px);
+  }
+`;
+
 export const Attributes = styled.div`
   margin-top: 18px;
   background: ${({ theme }) => theme.colors.cardBg};

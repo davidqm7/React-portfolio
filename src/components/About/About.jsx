@@ -38,6 +38,7 @@ const About = () => {
               <li>Curious about new tools and best practices</li>
             </ul>
           </Attributes>
+
         </AboutText>
       </AboutGrid>
     </AboutSection>

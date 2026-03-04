@@ -16,10 +16,10 @@ const Skills = () => {
   return (
     <SkillsSection id="skills">
       <SectionHeader>
-        <motion.h2 initial={{opacity:0,y:10}} animate={{opacity:1,y:0}}>
+        <motion.h2 initial={{opacity:0,y:10}} whileInView={{opacity:1,y:0}} viewport={{once:true}}>
           Technical Skills
         </motion.h2>
-        <motion.p initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} transition={{delay:0.1}}>
+        <motion.p initial={{opacity:0,y:10}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:0.1}}>
           My technical toolkit and expertise
         </motion.p>
       </SectionHeader>

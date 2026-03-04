@@ -69,7 +69,7 @@ const Contact = () => {
           />
           <TextArea
             name="message"
-            placeholder="How can I help?"
+            placeholder="Your message"
             rows="6"
             value={state.message}
             onChange={onChange}

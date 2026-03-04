@@ -4,7 +4,8 @@ import {
   FaComments,
   FaChartLine,
   FaProjectDiagram,
-  FaGamepad
+  FaGamepad,
+  FaDatabase
 } from 'react-icons/fa';
 import { SiPhp } from 'react-icons/si';
 
@@ -19,12 +20,22 @@ export const projectFilters = [
 export const projectsData = [
   // ML/Data projects
   {
+    id: 'crypto-sentinel',
+    title: 'CryptoSentinel: Sentiment vs. Price Correlation Engine',
+    category: 'ml',
+    icon: <FaDatabase />,
+    description:
+      'Engineered an autonomous ELT pipeline on AWS EC2 using Docker and Cron to extract live cryptocurrency prices and global news data at hourly intervals. Deployed a TextBlob NLP model to calculate media sentiment polarity and load unstructured JSON payloads into a Snowflake data warehouse.',
+    tech: ['Python', 'AWS EC2', 'Snowflake', 'dbt', 'Docker', 'Streamlit'],
+    repo: 'https://github.com/davidqm7/crypto-sentinel'
+  },
+  {
     id:'vapor-scope',
     title: 'VaporScope: AI-Powered Steam Review Analyzer',
     category: 'fullstack',
     icon: <FaProjectDiagram />,
     description:
-      'Developed VaporScope, an AI-driven tool that analyzes Steam game reviews using NLP techniques like sentiment analysis and topic modeling. Built with Python, Pandas, NLTK, and Scikit-learn, it provides gamers with insights into game quality and user sentiment.',
+      'Engineered a serverless Chrome Extension that integrates Generative AI (Gemini 2.5) into the Steam store, summarizing thousands of user reviews into real-time buying advice. Architected a scalable backend using Cloudflare Workers (Edge Computing) to handle API traffic, implementing strict security handshakes and origin locking to prevent abuse.',
     tech: ['Gemini API', 'Cloudflare Workers', 'Supabase', 'SQL'],
     repo: 'https://github.com/davidqm7/VaporScope',
     demo: 'https://chromewebstore.google.com/detail/vaporscope-steam-review-a/jjijnfboadbbebbbljkohheepooleinb?pli=1'
@@ -113,7 +124,7 @@ export const projectsData = [
       'Capstone suite of three Unity-based matching games converting Air Force regulatory content into interactive training (STINFO, Records Management, No Fear Act). Includes timer, attempts, restart, and deployment prep.',
     tech: ['Unity', 'C#', 'WebGL', 'Game Design'],
     repo: 'https://github.com/davidqm7/Records-Management-',
-    demo: 'https://github.com/lpdevine/RobbinsAFBTrainingGame2024.git'
+    demo: 'https://github.com/lpdevine/RobbinsAFBTrainingGame2024'
   },
 
   // Frontend / Data

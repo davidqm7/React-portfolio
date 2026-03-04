@@ -40,8 +40,8 @@ export const NavLinks = styled.div`
 
 export const NavLinkItem = styled.a`
   color: ${({ theme }) => theme.colors.white};
-  opacity: 0.95;
-  font-weight: 500;
+  opacity: ${({ $active }) => ($active ? 1 : 0.95)};
+  font-weight: ${({ $active }) => ($active ? 700 : 500)};
   position: relative;
   padding: 6px 0;
 
@@ -49,7 +49,7 @@ export const NavLinkItem = styled.a`
     content: '';
     position: absolute;
     height: 2px; left: 0; bottom: -6px;
-    width: 0;
+    width: ${({ $active }) => ($active ? '100%' : '0')};
     background: ${({ theme }) => theme.colors.white};
     transition: width 0.25s ease;
   }
