@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProjectsSection = styled.section`
-  background: ${({ theme }) => theme.colors.bg};
+  background: ${({ theme }) => theme.colors.cardBg};
 `;
 
 export const SectionHeader = styled.div`
@@ -56,6 +56,13 @@ export const ProjectCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: ${({ theme }) => theme.shadow.md};
+  }
 
   .desc {
     color: ${({ theme }) => theme.colors.textLight};
@@ -94,8 +101,24 @@ export const TechStack = styled.div`
   }
 `;
 
+export const FeaturedBadge = styled.span`
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: ${({ theme }) => theme.colors.primary};
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: ${({ theme }) => theme.radius.pill};
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  align-self: flex-start;
+`;
+
 export const ProjectLinks = styled.div`
-  margin-top: 6px;
+  margin-top: auto;
+  padding-top: 6px;
   display: flex;
   gap: 12px;
 

@@ -11,9 +11,9 @@ import {
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
-  const filtered = projectsData.filter(
-    p => filter === 'all' || p.category === filter
-  );
+  const filtered = projectsData
+    .filter(p => filter === 'all' || p.category === filter)
+    .sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
 
   return (
     <ProjectsSection id="projects">

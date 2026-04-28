@@ -21,6 +21,7 @@ export const projectsData = [
   // ML/Data projects
   {
     id: 'crypto-sentinel',
+    featured: true,
     title: 'CryptoSentinel: Sentiment vs. Price Correlation Engine',
     category: 'ml',
     icon: <FaDatabase />,
@@ -31,6 +32,7 @@ export const projectsData = [
   },
   {
     id:'vapor-scope',
+    featured: true,
     title: 'VaporScope: AI-Powered Steam Review Analyzer',
     category: 'fullstack',
     icon: <FaProjectDiagram />,
@@ -83,6 +85,7 @@ export const projectsData = [
   // Backend
   {
     id: 'routeiq',
+    featured: true,
     title: 'RouteIQ: Event-Driven Call Routing Engine',
     category: 'backend',
     icon: <FaProjectDiagram />,
@@ -93,6 +96,7 @@ export const projectsData = [
   },
   {
     id: 'clearcall',
+    featured: true,
     title: 'ClearCall: CCaaS Conversation Analytics Platform',
     category: 'backend',
     icon: <FaDatabase />,

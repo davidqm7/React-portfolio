@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const AboutSection = styled.section`
   background: ${({ theme }) => theme.colors.bg};
+  padding: 110px 20px 90px;
 `;
 
 export const AboutGrid = styled.div`
@@ -28,13 +29,20 @@ export const Avatar = styled.div`
 `;
 
 export const AboutText = styled.div`
-  h1 {
-    color: ${({ theme }) => theme.colors.primary};
-    font-size: 2.4rem;
-    margin-bottom: 12px;
+  .greeting {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: ${({ theme }) => theme.colors.textLight};
+    margin: 0 0 6px;
   }
 
-  .wave { margin-left: 8px; }
+  h1 {
+    color: ${({ theme }) => theme.colors.primary};
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
 
   .lead {
     font-size: 1.1rem;

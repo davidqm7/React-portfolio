@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import {
   AboutSection,
   AboutGrid,
@@ -12,34 +13,45 @@ const About = () => {
   return (
     <AboutSection id="about">
       <AboutGrid>
-        <Avatar>
-          <img src={avatar} alt="David working at computer" />
-        </Avatar>
+        <motion.div
+          initial={{ opacity: 0, x: -28 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+        >
+          <Avatar>
+            <img src={avatar} alt="David working at computer" />
+          </Avatar>
+        </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, x: 28 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.15 }}
+        >
         <AboutText>
-          <h1>
-            Hi, I&apos;m David Quintanilla! <span className="wave">👋</span>
-          </h1>
+          <p className="greeting">Hi there 👋</p>
+          <h1>I&apos;m David Quintanilla</h1>
           <p className="lead">
-            Analytical and detail oriented software and data professional with experience in data
-            visualization, cleaning, and statistical analysis using Python, SQL, and Tableau. Hands‑on with
-            regression, hypothesis testing, and A/B testing. Recently completed the Meta Data Analyst
-            Certificate and actively building full stack apps and backend APIs. Passionate about turning
-            data into decisions and shipping reliable, user focused software.
+            Software and data engineer with hands-on experience building backend APIs,
+            event-driven microservices, and Python ETL pipelines. Proficient in Java,
+            Spring Boot, and Spring Cloud for distributed systems, and in Python for
+            data engineering, machine learning, and statistical analysis. Pursuing a
+            Master&apos;s in AI while continuing to ship reliable, well-tested software
+            across the full stack.
           </p>
 
           <Attributes>
             <h3>Key attributes</h3>
             <ul>
-              <li>Strong foundation in front‑end and back‑end development</li>
-              <li>Experience with modern frameworks and cloud platforms</li>
-              <li>Collaborative, clear communicator, and proactive learner</li>
-              <li>Write clean, maintainable, and well‑tested code</li>
-              <li>Curious about new tools and best practices</li>
+              <li>Builds scalable backend APIs and microservices with Java and Spring Boot</li>
+              <li>Designs ETL/ELT pipelines and cloud data warehouse solutions</li>
+              <li>Applies ML and statistical modeling to real-world datasets</li>
+              <li>Full-stack experience from React frontends to distributed backends</li>
+              <li>Clean, testable code and professional Git workflow in team environments</li>
             </ul>
           </Attributes>
-
         </AboutText>
+        </motion.div>
       </AboutGrid>
     </AboutSection>
   );

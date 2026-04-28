@@ -28,24 +28,40 @@ export const ContactCard = styled.div`
   background: ${({ theme }) => theme.colors.cardBg};
   border-radius: ${({ theme }) => theme.radius.lg};
   box-shadow: ${({ theme }) => theme.shadow.sm};
-  padding: 22px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
   h3 {
-    margin-bottom: 12px;
     color: ${({ theme }) => theme.colors.text};
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .tagline {
+    color: ${({ theme }) => theme.colors.textLight};
+    font-size: 0.97rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: auto;
   }
 
   .link {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     font-weight: 700;
     color: ${({ theme }) => theme.colors.primary};
-    padding: 10px 14px;
+    padding: 12px 18px;
     border-radius: ${({ theme }) => theme.radius.pill};
     border: 2px solid ${({ theme }) => theme.colors.primary};
-    margin-right: 10px;
-    margin-bottom: 10px;
     transition: all 0.25s ease;
   }
   .link:hover {
@@ -111,4 +127,21 @@ export const SubmitBtn = styled.button`
 
   &:hover { background: ${({ theme }) => theme.colors.primaryDark}; }
   &:active { transform: translateY(1px); }
+  &:disabled { opacity: 0.6; cursor: not-allowed; }
+`;
+
+export const ErrorMsg = styled.span`
+  font-size: 0.82rem;
+  color: #d32f2f;
+  margin-top: -6px;
+`;
+
+export const SuccessBanner = styled.div`
+  background: #e8f5e9;
+  border: 1.5px solid #66bb6a;
+  border-radius: ${({ theme }) => theme.radius.md};
+  color: #2e7d32;
+  padding: 14px 16px;
+  font-weight: 600;
+  text-align: center;
 `;

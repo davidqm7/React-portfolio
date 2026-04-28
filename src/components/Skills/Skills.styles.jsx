@@ -54,13 +54,49 @@ export const SkillCardContainer = styled.div`
   box-shadow: ${({ theme }) => theme.shadow.sm};
   text-align: center;
   padding: 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: ${({ theme }) => theme.shadow.md};
+  }
+
   h3 { margin: 10px 0 6px; }
-  p { color: ${({ theme }) => theme.colors.textLight}; font-weight: 600; }
+  p { color: ${({ theme }) => theme.colors.textLight}; font-weight: 600; font-size: 0.85rem; }
 `;
 
 export const SkillIcon = styled.div`
   font-size: 2rem;
   color: ${({ theme }) => theme.colors.primary};
+`;
+
+export const SoftSkillCard = styled.div`
+  background: ${({ theme }) => theme.colors.cardBg};
+  border-radius: ${({ theme }) => theme.radius.lg};
+  box-shadow: ${({ theme }) => theme.shadow.sm};
+  text-align: center;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: ${({ theme }) => theme.shadow.md};
+  }
+
+  h3 { margin: 0; font-size: 1rem; }
+`;
+
+export const SoftBadge = styled.span`
+  background: ${({ theme }) => theme.colors.chipBg};
+  color: ${({ theme }) => theme.colors.primary};
+  border-radius: ${({ theme }) => theme.radius.pill};
+  padding: 5px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
 `;
 
 export const SkillLevel = styled.div`
@@ -74,6 +110,5 @@ export const SkillLevel = styled.div`
     height: 100%;
     background: ${({ theme }) => theme.colors.primary};
     border-radius: 6px;
-    transition: width 0.8s ease;
   }
 `;

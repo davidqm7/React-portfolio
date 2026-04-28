@@ -39,7 +39,7 @@ const Header = () => {
       <NavContainer>
         <Brand>
           <span className="name">David Quintanilla</span>
-          <span className="role">Data Professional</span>
+          <span className="role">Software & Data Engineer</span>
         </Brand>
 
         <NavLinks>

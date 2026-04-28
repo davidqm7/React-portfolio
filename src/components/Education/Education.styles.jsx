@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const EducationSection = styled.section`
-  background: ${({ theme }) => theme.colors.bg};
+  background: ${({ theme }) => theme.colors.cardBg};
 `;
 
 export const SectionHeader = styled.div`

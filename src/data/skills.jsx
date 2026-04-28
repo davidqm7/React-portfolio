@@ -75,6 +75,7 @@ export const skillsData = [
   { id: 'data10', name: 'Data Cleaning', icon: <FaBroom />, category: 'data', level: 80, proficiency: 'Advanced' },
   { id: 'data11', name: 'Scikit-Learn', icon: <SiScikitlearn />, category: 'data', level: 65, proficiency: 'Intermediate' },
   { id: 'data12', name: 'Seaborn', icon: <FaChartBar />, category: 'data', level: 75, proficiency: 'Advanced' },
+  { id: 'data15', name: 'Power BI', icon: <FaChartBar />, category: 'data', level: 70, proficiency: 'Intermediate' },
   { id: 'data13', name: 'Natural Language Processing', icon: <FaBrain />, category: 'data', level: 65, proficiency: 'Intermediate' },
   { id: 'data14', name: 'Sentiment Analysis', icon: <FaSmile />, category: 'data', level: 65, proficiency: 'Intermediate' },
 

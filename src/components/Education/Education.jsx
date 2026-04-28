@@ -19,7 +19,7 @@ const educationData = [
     date: 'Expected May 2027',
   },
   {
-    id: 'edu-1',
+    id: 'edu-2',
     type: 'Degree',
     icon: <FaGraduationCap />,
     title: 'Bachelor of Science, Software Engineering',

@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaStar } from 'react-icons/fa';
 import {
   ProjectCardContainer,
   ProjectHeader,
   TechStack,
-  ProjectLinks
+  ProjectLinks,
+  FeaturedBadge,
 } from './Project.styles';
 
 const ProjectCard = ({ project }) => {
@@ -18,6 +19,9 @@ const ProjectCard = ({ project }) => {
       transition={{ duration: 0.25 }}
     >
       <ProjectCardContainer>
+        {project.featured && (
+          <FeaturedBadge><FaStar /> Featured</FeaturedBadge>
+        )}
         <ProjectHeader>
           <span className="icon">{project.icon}</span>
           <h3>{project.title}</h3>
