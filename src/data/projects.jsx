@@ -82,6 +82,16 @@ export const projectsData = [
   },
   // Backend
   {
+    id: 'clearcall',
+    title: 'ClearCall: CCaaS Conversation Analytics Platform',
+    category: 'backend',
+    icon: <FaDatabase />,
+    description:
+      'Analytics layer for a Contact Center as a Service (CCaaS) environment. Ingests synthetic IVR interaction records, transforms them through a Python ETL pipeline, and loads them into an Apache Cassandra database with a Query-First schema design (denormalized across three tables). A Spring Boot REST API exposes agent handle times, IVR containment rates, and call category trends via Java Streams aggregation.',
+    tech: ['Python', 'Java', 'Spring Boot', 'Apache Cassandra', 'Docker', 'ETL Pipeline'],
+    repo: 'https://github.com/davidqm7/ClearCall'
+  },
+  {
     id: 'p1',
     title: 'Spring Social Media Blog API',
     category: 'backend',

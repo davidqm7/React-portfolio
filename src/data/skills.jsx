@@ -36,6 +36,8 @@ import {
   SiCloudflare,
   SiSupabase,
   SiSnowflake,
+  SiApachecassandra,
+  SiDocker,
 } from 'react-icons/si';
 
 // Filters shown as buttons in the Skills section
@@ -90,6 +92,7 @@ export const skillsData = [
   { id: 'db3', name: 'Firebase Firestore', icon: <SiFirebase />, category: 'databases', level: 70, proficiency: 'Intermediate' },
   { id: 'db4', name: 'Supabase', icon: <SiSupabase />, category: 'databases', level: 65, proficiency: 'Intermediate' },
   { id: 'db5', name: 'Snowflake', icon: <SiSnowflake />, category: 'databases', level: 60, proficiency: 'Intermediate' },
+  { id: 'db6', name: 'Apache Cassandra', icon: <SiApachecassandra />, category: 'databases', level: 60, proficiency: 'Intermediate' },
 
   // Tools
   { id: 'tool1', name: 'Jupyter', icon: <SiJupyter />, category: 'tools', level: 85, proficiency: 'Advanced' },
@@ -97,6 +100,7 @@ export const skillsData = [
   { id: 'tool3', name: 'Trello', icon: <SiTrello />, category: 'tools', level: 80, proficiency: 'Advanced' },
   { id: 'tool4', name: 'Google Gemini API', icon: <FaRobot />, category: 'tools', level: 70, proficiency: 'Intermediate' },
   { id: 'tool5', name: 'Cloudflare Workers', icon: <SiCloudflare />, category: 'tools', level: 65, proficiency: 'Intermediate' },
+  { id: 'tool6', name: 'Docker', icon: <SiDocker />, category: 'tools', level: 65, proficiency: 'Intermediate' },
 
   // Soft Skills
   { id: 'soft1', name: 'Problem Solving', icon: <FaLightbulb />, category: 'soft', level: 90, proficiency: 'Strong' },
