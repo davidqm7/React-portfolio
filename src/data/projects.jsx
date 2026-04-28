@@ -82,6 +82,16 @@ export const projectsData = [
   },
   // Backend
   {
+    id: 'routeiq',
+    title: 'RouteIQ: Event-Driven Call Routing Engine',
+    category: 'backend',
+    icon: <FaProjectDiagram />,
+    description:
+      'Microservices-based backend simulating the operational core of a contact center. Three Spring Boot services communicate via a Netflix Eureka service registry: an Agent Service managing skill-based profiles and availability, and a Call Routing Service that consumes XML call events from an Apache ActiveMQ Artemis broker via JMS. Uses JPA CriteriaBuilder for dynamic agent queries and enforces distributed atomicity with @Transactional before updating remote agent state via a load-balanced RestClient.',
+    tech: ['Java', 'Spring Boot', 'Spring Cloud', 'Apache ActiveMQ', 'JMS', 'Microservices'],
+    repo: 'https://github.com/davidqm7/RouteIQ'
+  },
+  {
     id: 'clearcall',
     title: 'ClearCall: CCaaS Conversation Analytics Platform',
     category: 'backend',

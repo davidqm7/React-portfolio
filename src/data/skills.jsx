@@ -17,6 +17,7 @@ import {
   FaChartLine,
   FaBroom,
   FaTable,
+  FaEnvelope,
 } from 'react-icons/fa';
 import {
   SiPandas,
@@ -38,6 +39,7 @@ import {
   SiSnowflake,
   SiApachecassandra,
   SiDocker,
+  SiSpring,
 } from 'react-icons/si';
 
 // Filters shown as buttons in the Skills section
@@ -85,6 +87,8 @@ export const skillsData = [
   // Backend
   { id: 'be1', name: 'Spring Boot', icon: <SiSpringboot />, category: 'backend', level: 70, proficiency: 'Intermediate' },
   { id: 'be2', name: 'Firebase (Auth, Firestore)', icon: <SiFirebase />, category: 'backend', level: 70, proficiency: 'Intermediate' },
+  { id: 'be3', name: 'Spring Cloud', icon: <SiSpring />, category: 'backend', level: 60, proficiency: 'Intermediate' },
+  { id: 'be4', name: 'Apache ActiveMQ (JMS)', icon: <FaEnvelope />, category: 'backend', level: 60, proficiency: 'Intermediate' },
 
   // Databases
   { id: 'db1', name: 'PostgreSQL', icon: <SiPostgresql />, category: 'databases', level: 70, proficiency: 'Intermediate' },
