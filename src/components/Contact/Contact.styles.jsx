@@ -91,28 +91,34 @@ export const ContactForm = styled.form`
 export const Input = styled.input`
   padding: 12px 14px;
   border-radius: ${({ theme }) => theme.radius.md};
-  border: 1.5px solid #e6e6e9;
+  border: 1.5px solid ${({ theme }) => theme.colors.border};
+  background: ${({ theme }) => theme.colors.inputBg};
+  color: ${({ theme }) => theme.colors.text};
   outline: none;
   font-size: 1rem;
+  font-family: inherit;
   transition: border-color 0.2s ease;
+  width: 100%;
 
-  &:focus {
-    border-color: ${({ theme }) => theme.colors.primary};
-  }
+  &::placeholder { color: ${({ theme }) => theme.colors.textLight}; }
+  &:focus { border-color: ${({ theme }) => theme.colors.primary}; }
 `;
 
 export const TextArea = styled.textarea`
   padding: 12px 14px;
   border-radius: ${({ theme }) => theme.radius.md};
-  border: 1.5px solid #e6e6e9;
+  border: 1.5px solid ${({ theme }) => theme.colors.border};
+  background: ${({ theme }) => theme.colors.inputBg};
+  color: ${({ theme }) => theme.colors.text};
   outline: none;
   font-size: 1rem;
+  font-family: inherit;
   resize: vertical;
   transition: border-color 0.2s ease;
+  width: 100%;
 
-  &:focus {
-    border-color: ${({ theme }) => theme.colors.primary};
-  }
+  &::placeholder { color: ${({ theme }) => theme.colors.textLight}; }
+  &:focus { border-color: ${({ theme }) => theme.colors.primary}; }
 `;
 
 export const SubmitBtn = styled.button`

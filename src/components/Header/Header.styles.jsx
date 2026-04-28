@@ -88,6 +88,57 @@ export const SocialLink = styled.a`
   &.email:hover { background: #ea4335; }
 `;
 
+export const ThemeToggleBtn = styled.button`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+
+  &:hover { background: rgba(255, 255, 255, 0.24); }
+`;
+
+export const PaletteHint = styled.button`
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: ${({ theme }) => theme.radius.sm};
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.78rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+
+  kbd {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 3px;
+    padding: 1px 5px;
+    font-size: 0.72rem;
+    font-family: inherit;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: ${({ theme }) => theme.colors.white};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    display: none;
+  }
+`;
+
 export const MobileMenuBtn = styled.button`
   margin-left: auto;
   display: none;
