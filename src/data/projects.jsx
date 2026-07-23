@@ -5,7 +5,8 @@ import {
   FaChartLine,
   FaProjectDiagram,
   FaGamepad,
-  FaDatabase
+  FaDatabase,
+  FaHeadset
 } from 'react-icons/fa';
 import { SiPhp } from 'react-icons/si';
 
@@ -104,6 +105,17 @@ export const projectsData = [
       'Analytics layer for a Contact Center as a Service (CCaaS) environment. Ingests synthetic IVR interaction records, transforms them through a Python ETL pipeline, and loads them into an Apache Cassandra database with a Query-First schema design (denormalized across three tables). A Spring Boot REST API exposes agent handle times, IVR containment rates, and call category trends via Java Streams aggregation.',
     tech: ['Python', 'Java', 'Spring Boot', 'Apache Cassandra', 'Docker', 'ETL Pipeline'],
     repo: 'https://github.com/davidqm7/ClearCall'
+  },
+  {
+    id: 'skyfleet',
+    featured: true,
+    title: 'SkyFleet Cloud Contact Center',
+    category: 'backend',
+    icon: <FaHeadset />,
+    description:
+      'Cloud-native, omnichannel contact center on Amazon Connect for a drone-rental company, unifying voice and web chat routing in a single instance. Owned the backend and AI logic as part of a 3-person engineering pod: an event-driven AWS Lambda function looks up inbound callers in a DynamoDB customer table to identify VIP tiers and route them to a dedicated queue with custom agent whisper alerts, while Amazon Lex handles NLP intent detection (billing vs. technical issues) for web chat. Automated Amazon Cases generate a support ticket (tracking drone model and issue severity) before the agent connects, with Contact Lens providing real-time transcription, keyword detection, and supervisor dashboards.',
+    tech: ['AWS', 'Amazon Connect', 'AWS Lambda', 'DynamoDB', 'Amazon Lex', 'Python'],
+    repo: 'https://github.com/davidqm7/skyfleet-cloud-contact-center'
   },
   {
     id: 'p1',

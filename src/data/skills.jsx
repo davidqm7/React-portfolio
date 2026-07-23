@@ -18,6 +18,9 @@ import {
   FaBroom,
   FaTable,
   FaEnvelope,
+  FaAws,
+  FaHeadset,
+  FaCommentDots,
 } from 'react-icons/fa';
 import {
   SiPandas,
@@ -40,6 +43,8 @@ import {
   SiApachecassandra,
   SiDocker,
   SiSpring,
+  SiAwslambda,
+  SiAmazondynamodb,
 } from 'react-icons/si';
 
 // Filters shown as buttons in the Skills section
@@ -90,6 +95,7 @@ export const skillsData = [
   { id: 'be2', name: 'Firebase (Auth, Firestore)', icon: <SiFirebase />, category: 'backend', level: 70, proficiency: 'Intermediate' },
   { id: 'be3', name: 'Spring Cloud', icon: <SiSpring />, category: 'backend', level: 60, proficiency: 'Intermediate' },
   { id: 'be4', name: 'Apache ActiveMQ (JMS)', icon: <FaEnvelope />, category: 'backend', level: 60, proficiency: 'Intermediate' },
+  { id: 'be5', name: 'AWS Lambda', icon: <SiAwslambda />, category: 'backend', level: 70, proficiency: 'Intermediate' },
 
   // Databases
   { id: 'db1', name: 'PostgreSQL', icon: <SiPostgresql />, category: 'databases', level: 70, proficiency: 'Intermediate' },
@@ -98,6 +104,7 @@ export const skillsData = [
   { id: 'db4', name: 'Supabase', icon: <SiSupabase />, category: 'databases', level: 65, proficiency: 'Intermediate' },
   { id: 'db5', name: 'Snowflake', icon: <SiSnowflake />, category: 'databases', level: 60, proficiency: 'Intermediate' },
   { id: 'db6', name: 'Apache Cassandra', icon: <SiApachecassandra />, category: 'databases', level: 60, proficiency: 'Intermediate' },
+  { id: 'db7', name: 'Amazon DynamoDB', icon: <SiAmazondynamodb />, category: 'databases', level: 65, proficiency: 'Intermediate' },
 
   // Tools
   { id: 'tool1', name: 'Jupyter', icon: <SiJupyter />, category: 'tools', level: 85, proficiency: 'Advanced' },
@@ -106,6 +113,9 @@ export const skillsData = [
   { id: 'tool4', name: 'Google Gemini API', icon: <FaRobot />, category: 'tools', level: 70, proficiency: 'Intermediate' },
   { id: 'tool5', name: 'Cloudflare Workers', icon: <SiCloudflare />, category: 'tools', level: 65, proficiency: 'Intermediate' },
   { id: 'tool6', name: 'Docker', icon: <SiDocker />, category: 'tools', level: 65, proficiency: 'Intermediate' },
+  { id: 'tool7', name: 'AWS (EC2, IAM, Cloud Architecture)', icon: <FaAws />, category: 'tools', level: 70, proficiency: 'Intermediate' },
+  { id: 'tool8', name: 'Amazon Connect', icon: <FaHeadset />, category: 'tools', level: 65, proficiency: 'Intermediate' },
+  { id: 'tool9', name: 'Amazon Lex', icon: <FaCommentDots />, category: 'tools', level: 60, proficiency: 'Intermediate' },
 
   // Soft Skills
   { id: 'soft1', name: 'Problem Solving', icon: <FaLightbulb />, category: 'soft', level: 90, proficiency: 'Strong' },
